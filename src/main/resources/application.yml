@@ -8,19 +8,11 @@ server:
 gateway:
   default-target-base-url: http://190.180.0.111:9099
   routes:
-    - path-prefix: /limit-validator/fx
-      target-base-url: http://190.180.0.111:9099
-    - path-prefix: /limit-validator/fi
-      target-base-url: http://190.180.0.111:9099
-    - path-prefix: /limit-validator/repo
-      target-base-url: http://190.180.0.111:9099
-    - path-prefix: /limit-validator/mm
-      target-base-url: http://190.180.0.111:9099
-    - path-prefix: /limit-validator/mfund
-      target-base-url: http://190.180.0.111:9099
-    - path-prefix: /master-data-hub
-      target-base-url: http://190.180.0.111:9099
-    - path-prefix: /limit-validator
-      target-base-url: http://190.180.0.111:9099
-    - path-prefix: /cashflow-manager
-      target-base-url: http://localhost:7280
+#    - path-prefix: /master-data-hub
+#      target-base-url: http://localhost:8088
+#    - path-prefix: /cashflow-manager
+#      target-base-url: http://localhost:7280
+    - path-prefix: /master/financial-security
+      target-base-url: http://localhost:8085
+    - path-prefix: /master/counterparty/
+      target-base-url: http://localhost:8087
